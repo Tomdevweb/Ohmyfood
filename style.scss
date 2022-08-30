@@ -1,5 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   width: 100%;
-  margin: auto;
-  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+@import "./layouts/header";
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__icon {
+    display: flex;
+    margin-right: 10%;
+  }
 }
