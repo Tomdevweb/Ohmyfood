@@ -5,7 +5,6 @@
 }
 
 body {
-  width: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
@@ -13,12 +12,15 @@ body {
 @import "./layouts/header";
 
 .location {
+  background-color: #f2f2f2;
+  text-align: center;
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 1rem;
+  padding: 4%;
+  font-weight: 500;
 
   &__icon {
-    display: flex;
-    margin-right: 10%;
+    font-weight: 16px;
   }
 }
