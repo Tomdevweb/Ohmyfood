@@ -1,12 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 header {
@@ -20,15 +15,34 @@ header {
 
 .location {
   background-color: #f2f2f2;
-  text-align: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
-  padding: 4%;
+  padding: 0.5rem;
   font-weight: 500;
 }
 .location__icon {
   font-weight: 16px;
+}
+
+.explorer {
+  text-align: center;
+}
+.explorer__title {
+  margin-top: 2rem;
+  font-size: 23px;
+}
+.explorer__text {
+  font-weight: 300;
+}
+.explorer__btn {
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 200px;
+  padding: 3%;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
 }
 
 /*# sourceMappingURL=style.css.map */
