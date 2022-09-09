@@ -1,0 +1,12 @@
+@mixin box-shadow {
+  background-color: #fff;
+  box-shadow: 0.4rem 0.4rem 15px rgba(0, 0, 0, 0.5);
+}
+
+@mixin gradient {
+  background-image: linear-gradient(
+    to top,
+    rgba(147, 86, 220, 0.9),
+    rgba(255, 121, 218, 0.9)
+  );
+}
