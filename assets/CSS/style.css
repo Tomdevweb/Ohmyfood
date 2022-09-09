@@ -205,11 +205,11 @@ header {
   font-size: 1.5rem;
 }
 
-.fa-regular {
+.cards__heart1 {
   position: absolute;
 }
 
-.fa-solid {
+.cards__heart2 {
   position: relative;
   color: transparent;
   background-color: white;
@@ -219,7 +219,7 @@ header {
   opacity: 0;
   transition: all 200ms;
 }
-.fa-solid:hover {
+.cards__heart2:hover {
   opacity: 1;
 }
 
