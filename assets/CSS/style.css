@@ -89,12 +89,12 @@ body {
   padding: 1rem;
   cursor: pointer;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  background-image: linear-gradient(to top left, #9356dc, #ff79da);
   transition-duration: 0.2s;
 }
 .btn:hover {
   box-shadow: 0.4rem 0.4rem 15px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(to top, #9b63df, #ff88de);
+  background: linear-gradient(to top left, #9b63df, #ff88de);
 }
 
 header {
@@ -180,7 +180,7 @@ header h1 {
   position: relative;
   color: transparent;
   background-color: white;
-  background-image: linear-gradient(to top, #9356dc, #ff79da);
+  background-image: linear-gradient(to top left, #9356dc, #ff79da);
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms;
