@@ -2,7 +2,8 @@
 @use "./components/loader" as *;
 @use "./components/button" as *;
 @use "./layouts/header" as *;
-@use "./pages/home" as *;
+
 @use "./layouts/cardsmenus" as *;
 @use "./layouts/footer" as *;
+@use "./pages/home" as *;
 @use "./pages/menus" as *;

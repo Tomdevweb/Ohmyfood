@@ -1,4 +1,5 @@
 @use "../utils/variables" as *;
+@use "../utils/_keyframes" as *;
 
 .loader {
   position: fixed;
@@ -6,25 +7,12 @@
   opacity: 0.9;
   height: 100%;
   width: 100%;
-  inset: 0; //egal a top 0 , right 0 , left 0 bottom 0
+  inset: 0; // top 0 , right 0 , left 0 , bottom 0
   z-index: 1;
-  animation: loader-out 0.5s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+  animation: loader-out 1s 1.5s forwards; //name, duration, delay, fill-mode
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@keyframes loader-out {
-  0% {
-    opacity: 0.9;
-    z-index: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -99;
-  }
 }
 
 .loader__dotsContainer {
@@ -41,26 +29,14 @@
   animation-iteration-count: 1;
 }
 
-@keyframes upanddown {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(0.5rem);
-  }
-  75% {
-    transform: translateY(-0.5rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .loader__dots--1 {
   background-color: $color-primary;
 }
 .loader__dots--2 {
   background-color: $color-secondary;
+  animation-delay: 0.2s;
 }
 .loader__dots--3 {
   background-color: $color-tertiary;
+  animation-delay: 0.3s;
 }

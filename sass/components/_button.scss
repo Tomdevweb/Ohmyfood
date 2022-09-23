@@ -1,4 +1,5 @@
 @use "../utils/mixins";
+@use "../utils/variables" as *;
 
 .btn {
   color: white;
@@ -8,11 +9,11 @@
   padding: 1rem;
   cursor: pointer;
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-  background-color: #686868;
   @include mixins.gradient;
   transition-duration: 0.2s;
 
   &:hover {
     @include mixins.box-shadow;
+    background: linear-gradient(to top, $light-primary, $light-secondary);
   }
 }
