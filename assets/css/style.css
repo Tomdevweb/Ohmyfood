@@ -33,10 +33,10 @@ body {
 }
 @keyframes appear {
   0% {
-    transform: scale(0);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 .loader {
@@ -147,7 +147,7 @@ header h1 {
 .cards__badge {
   background-color: #99e2d0;
   color: #1b6150;
-  padding: 5px;
+  padding: 5px 10px;
   border-radius: 3px;
   position: absolute;
   top: 10px;
@@ -247,7 +247,7 @@ header h1 {
 }
 
 .filters {
-  width: 95%;
+  width: 92%;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -273,6 +273,9 @@ header h1 {
 }
 .filters__step:hover i {
   color: #9356dc;
+}
+.filters__text {
+  padding: 0.2rem;
 }
 .filters__numbers {
   background-color: #9356dc;
@@ -320,9 +323,6 @@ header h1 {
   height: 320px;
   width: 100%;
 }
-.menusdetails--1 {
-  height: 400px;
-}
 .menusdetails__steps {
   margin-bottom: 0;
   margin-left: 0.5rem;
@@ -342,14 +342,8 @@ header h1 {
   animation: appear 1s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
-  transform: scale(0);
+  opacity: 0;
   overflow: hidden;
-}
-.menusdetails__cards:hover .menusdetails__wrapicon {
-  transform: rotate(0);
-}
-.menusdetails__cards:hover .menusdetails__confirm {
-  margin-right: -1rem;
 }
 .menusdetails__description {
   overflow-x: hidden;
@@ -370,6 +364,7 @@ header h1 {
 }
 .menusdetails__price {
   display: flex;
+  font-weight: bold;
 }
 .menusdetails__confirm {
   background-color: #99e2d0;
@@ -396,39 +391,56 @@ header h1 {
   color: #99e2d0;
 }
 
+.menusdetails__cards:hover .menusdetails__wrapicon {
+  transform: rotate(0);
+}
+
+.menusdetails__cards:hover .menusdetails__confirm {
+  margin-right: -1rem;
+}
+
 .menusdetails--1 {
   height: 400px;
 }
 
 .delay-0 {
-  animation-delay: 0s;
-}
-.delay-1 {
   animation-delay: 0.1s;
 }
-.delay-2 {
+
+.delay-1 {
   animation-delay: 0.2s;
 }
-.delay-3 {
+
+.delay-2 {
   animation-delay: 0.3s;
 }
-.delay-4 {
+
+.delay-3 {
   animation-delay: 0.4s;
 }
-.delay-5 {
-  animation-delay: 0.5s;
-}
-.delay-6 {
+
+.delay-4 {
   animation-delay: 0.6s;
 }
-.delay-7 {
+
+.delay-5 {
   animation-delay: 0.7s;
 }
-.delay-8 {
+
+.delay-6 {
   animation-delay: 0.8s;
 }
-.delay-9 {
+
+.delay-7 {
   animation-delay: 0.9s;
+}
+
+.delay-8 {
+  animation-delay: 1s;
+}
+
+.delay-9 {
+  animation-delay: 1.1s;
 }
 
 .menus__btn {
@@ -437,6 +449,51 @@ header h1 {
 }
 .menus__btn--modif {
   padding: 1rem 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .menus {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+  }
+  .menus__img {
+    height: 350px;
+  }
+  .menusbloc {
+    display: flex;
+    flex-direction: row;
+  }
+  .menusdetails {
+    width: 33%;
+  }
+  .filters {
+    max-width: 1280px;
+    width: 100%;
+    padding: 1rem;
+  }
+  .filters__steps {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .filters__step {
+    width: 30%;
+  }
+  .filters__text {
+    padding-right: 2rem;
+    margin-left: -15px;
+  }
+  .cards {
+    max-width: 1280px;
+  }
+  .cards__block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .cards__links {
+    width: 48%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
