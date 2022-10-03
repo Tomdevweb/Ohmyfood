@@ -221,9 +221,6 @@ header h1 {
   gap: 1rem;
   font-weight: 500;
 }
-.location__icon {
-  font-weight: 16px;
-}
 
 .explorer {
   text-align: center;
@@ -452,6 +449,9 @@ header h1 {
 }
 
 @media screen and (min-width: 1024px) {
+  .br-off {
+    display: none;
+  }
   .menus {
     max-width: 1280px;
     width: 100%;
@@ -470,7 +470,7 @@ header h1 {
   .filters {
     max-width: 1280px;
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
   }
   .filters__steps {
     flex-direction: row;

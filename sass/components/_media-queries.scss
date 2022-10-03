@@ -1,4 +1,8 @@
 @media screen and (min-width: 1024px) {
+  .br-off {
+    display: none;
+  }
+
   .menus {
     max-width: 1280px;
     width: 100%;
@@ -17,7 +21,7 @@
   .filters {
     max-width: 1280px;
     width: 100%;
-    padding: 1rem;
+    padding: 0 1rem;
     &__steps {
       flex-direction: row;
       justify-content: space-between;
