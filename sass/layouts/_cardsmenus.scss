@@ -1,11 +1,11 @@
 @use "../utils/mixins";
 
 .cards {
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   padding: 2rem 1rem;
   width: 100%;
-
   margin: auto;
+
   &__block {
     display: flex;
     flex-direction: column;

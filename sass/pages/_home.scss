@@ -2,7 +2,7 @@
 @use "../utils/mixins";
 
 .location {
-  background-color: #f2f2f2;
+  background-color: #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,8 +12,10 @@
 
 .explorer {
   text-align: center;
+  background-color: #f6f6f6;
+  padding: 1rem 0 3rem;
+
   &__title {
-    margin-top: 2rem;
     font-size: 23px;
   }
   &__text {

@@ -3,21 +3,6 @@
     display: none;
   }
 
-  .menus {
-    max-width: 1280px;
-    width: 100%;
-    margin: auto;
-    &__img {
-      height: 350px;
-    }
-  }
-  .menusbloc {
-    display: flex;
-    flex-direction: row;
-  }
-  .menusdetails {
-    width: 33%;
-  }
   .filters {
     max-width: 1280px;
     width: 100%;
@@ -44,6 +29,34 @@
     }
     &__links {
       width: 48%;
+    }
+  }
+
+  .menus {
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    &__img {
+      height: 350px;
+    }
+  }
+  .menusbloc {
+    display: flex;
+    flex-direction: row;
+  }
+  .menusdetails {
+    width: 33%;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    &__bloc {
+      flex-direction: row;
+      gap: 5rem;
+    }
+    &__links {
+      margin-top: 3px;
     }
   }
 }
